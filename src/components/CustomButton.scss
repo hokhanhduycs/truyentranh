@@ -10,7 +10,7 @@
       background-color: #2398f8;
    }
 
-   ~ .customButton {
+   & + .customButton {
       margin-left: 8px;
    }
 }
