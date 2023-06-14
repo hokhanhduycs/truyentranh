@@ -13,6 +13,9 @@ const Chap = () => {
                <CustomButton>Server 1</CustomButton>
                <CustomButton>Server 2</CustomButton>
             </div>
+            <div className="chap__tutorial">
+               <p>Sử dụng mũi tên trái (←) hoặc phải (→) để chuyển chapter</p>
+            </div>
             <div className="chap__controlerContainer row">
                <div className="chap_contrlerHome">Home</div>
                <div className="chap_contrlerChaps">Chaps</div>
