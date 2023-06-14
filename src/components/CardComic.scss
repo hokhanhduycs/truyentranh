@@ -1,0 +1,50 @@
+.cardcomic {
+  margin: 8px;
+  cursor: pointer;
+
+  .cardcomic__container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    max-width: 230px;
+    min-width: 205px;
+    border-radius: 3px;
+    .cardcomic__barner {
+      position: relative;
+      .cardcomic__tag {
+        position: absolute;
+        background-color: #383232bd;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+      }
+    }
+
+    .cardcomic__title {
+      color: white;
+      font-size: 16px;
+    }
+    .cardcomic__chaps {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 12px;
+      width: 100%;
+      .cardcomic__chap{
+        font-size: 14px;
+        width: 100%;
+        padding: 5px 10px;
+        font-weight: 400;
+        &:hover{
+            background: #ffffff;
+        }
+      }
+
+    }
+  }
+}
