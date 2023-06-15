@@ -1,6 +1,8 @@
 import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
+import "./Chap.scss";
 
 export const metadata = {
    title: "Truyện Tranh demo [Chap 1] - Truyen tranh",
@@ -17,8 +19,14 @@ const Chap = () => {
                <p>Sử dụng mũi tên trái (←) hoặc phải (→) để chuyển chapter</p>
             </div>
             <div className="chap__controlerContainer row">
-               <div className="chap_contrlerHome">Home</div>
-               <div className="chap_contrlerChaps">Chaps</div>
+               <div className="chap_contrlerHome">
+                  <Link href="/">Home</Link>
+               </div>
+
+               <div className="chap_contrlerChaps">
+                  <Link href="/truyentranh/test">Chaps</Link>
+               </div>
+
                <div className="chap_contrler row">
                   <CustomButton>Press</CustomButton>
                   <input type="text" value="Chap 1" />
@@ -26,8 +34,14 @@ const Chap = () => {
                </div>
             </div>
             <div className="chap__content">
-               <Image src="/chaps/1.png" width={800} height={800} alt="img 1" />
-               <Image src="/chaps/2.png" width={800} height={800} alt="img 2" />
+               <Image
+                  className="chap__contentImg"
+                  src="/chaps/1.png"
+                  width={600}
+                  height={800}
+                  alt="img 1"
+               />
+               {/* <Image src="/chaps/2.png" width={800} height={800} alt="img 2" />
                <Image src="/chaps/3.png" width={800} height={800} alt="img 3" />
                <Image src="/chaps/4.png" width={800} height={800} alt="img 4" />
                <Image src="/chaps/5.png" width={800} height={800} alt="img 5" />
@@ -70,7 +84,7 @@ const Chap = () => {
                   width={800}
                   height={800}
                   alt="img 15"
-               />
+               /> */}
             </div>
          </div>
       </div>

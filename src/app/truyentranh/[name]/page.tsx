@@ -1,5 +1,6 @@
 import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const metadata = {
@@ -45,8 +46,14 @@ const TruyenTranh = () => {
                      </div>
                   </div>
                   <div className="comic__button row">
-                     <CustomButton>Đọc từ đầu</CustomButton>
-                     <CustomButton>Đọc mới nhất</CustomButton>
+                     <CustomButton>
+                        <Link href="/truyentranh/test/chapdau">Đọc từ đầu</Link>
+                     </CustomButton>
+                     <CustomButton>
+                        <Link href="/truyentranh/test/chapmoi">
+                           Đọc mới nhất
+                        </Link>
+                     </CustomButton>
                   </div>
                </div>
             </div>
